@@ -1,0 +1,3 @@
+administer geofield_gmap configuration':
+  title: 'Administer Geofield Gmap configuration'
+  description: 'Allows configuration of the Geofield Gmap module settings.'

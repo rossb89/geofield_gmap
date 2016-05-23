@@ -1,0 +1,5 @@
+geofield_gmap.config:
+  title: 'Geofield Gmap'
+  description: 'Configuration of the Geofield Gmap module.'
+  parent: system.admin_config_system
+  route_name: geofield_gmap.config_form

@@ -1,0 +1,8 @@
+name: Geofield Gmap
+type: module
+description: Additional module for geofield to add a widget to support adding lat/long data using a Google Map
+package: Geofield
+version: 8.1-dev
+core: 8.x
+dependencies:
+  - geofield

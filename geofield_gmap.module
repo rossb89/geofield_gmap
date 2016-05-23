@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_library_info_build()
+ */
+function geofield_gmap_library_info_build() {
+  $libraries = [];
+
+  $geofield_gmap_config = \Drupal::config('geofield_gmap.settings');
+  $key = $geofield_gmap_config->get('google_maps_api_key');
+
+  $libraries['googlemaps'] = [
+    'js' => [
+      'http://maps.googleapis.com/maps/api/js?key=' . $key => [ 'type' => 'external' ]
+    ],
+  ];
+
+  return $libraries;
+}

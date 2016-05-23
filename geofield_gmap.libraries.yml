@@ -1,0 +1,7 @@
+gmap:
+  version: 1.x
+  js:
+    js/geofield_gmap_latlong.js: {}
+  css:
+    theme:
+      css/geofield_gmap_latlong.css: {}
