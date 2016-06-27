@@ -16,6 +16,7 @@
     return new google.maps.Map(document.getElementById('googlemaps_canvas'), {
       zoom: 9,
       center: new google.maps.LatLng(coords.lat, coords.lng),
+      disableDoubleClickZoom: true,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
   };
@@ -37,6 +38,18 @@
       $(context).find('.field--type-geofield .geofield-lon').val(markerCoords.lng);
     });
   };
+
+  var addGmapDeleteListener = function(marker, context) {
+    google.maps.event.addListener(marker, 'rightclick', function (evt) {
+      mapMarker.setMap(null);
+      mapMarker = '';
+
+      // Update the field lat / lng from the new coords
+      $(context).find('.field--type-geofield .geofield-lat').val('');
+      $(context).find('.field--type-geofield .geofield-lon').val('');
+    });
+  };
+
 
   var initMarkerCoordsFromFieldValues = function(context) {
     if ($(context).find('.field--type-geofield .geofield-lat').val() &&
@@ -92,6 +105,9 @@
 
             // Add the drag event listener
             addGmapDragListener(mapMarker, context);
+
+            // Add the delete listener
+            addGmapDeleteListener(mapMarker, context);
 
             // Setup the map, marker
             map.setCenter(mapMarker.position);
