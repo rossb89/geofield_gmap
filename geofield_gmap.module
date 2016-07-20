@@ -11,7 +11,7 @@ function geofield_gmap_library_info_build() {
 
   $libraries['googlemaps'] = [
     'js' => [
-      'http://maps.googleapis.com/maps/api/js?key=' . $key => [ 'type' => 'external' ]
+      'https://maps.googleapis.com/maps/api/js?key=' . $key => [ 'type' => 'external' ]
     ],
   ];
 
