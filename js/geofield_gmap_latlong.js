@@ -1,6 +1,6 @@
 (function ($) {
   var markerCoords = {};
-  var map = {};
+  map = {};
   var mapMarker = {};
   var defaultCoords = {
     'lat' : 51.507,
