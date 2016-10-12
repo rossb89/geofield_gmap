@@ -1,6 +1,6 @@
 {
   "name": "rossb89/geofield_gmap",
-  "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
+  "description": "Additional module for geofield to add a widget to support adding lat/long data using a Google Map",
   "type": "drupal-module",
   "homepage": "https://github.com/rossb89/geofield_gmap.git",
   "authors": [
