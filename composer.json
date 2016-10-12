@@ -1,0 +1,20 @@
+{
+  "name": "rossb89/geofield_gmap",
+  "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
+  "type": "drupal-module",
+  "homepage": "https://github.com/rossb89/geofield_gmap.git",
+  "authors": [
+    {
+      "name": "rossb89",
+      "homepage": "http://www.drupal.org/u/rossb89"
+    },
+  ],
+  "support": {
+    "issues": "https://github.com/rossb89/geofield_gmap/issues",
+    "source": "https://github.com/rossb89/geofield_gmap.git"
+  },
+  "license": "GPL-2.0+",
+  "require": {
+    "drupal/geofield": "8.1.0-alpha2"
+  }
+}
