@@ -15,6 +15,6 @@
   },
   "license": "GPL-2.0+",
   "require": {
-    "drupal/geofield": "1.0-alpha2"
+    "drupal/geofield": "^1.0-alpha2"
   }
 }
